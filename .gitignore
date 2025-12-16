@@ -1,0 +1,50 @@
+# Ignore-file for OpenFOAM cases
+
+# Compiled binaries and libraries
+Make/
+*.o
+*.so
+dynamicCode/
+
+# Logs
+log.*
+*.log
+
+# Simulation time directories (results)
+# Matches any directory that is a number (integer or float)
+/[0-9]*
+!0_org/
+
+# Parallel processing directories
+processor*
+
+# Post-processing files and directories
+postProcessing/
+VTK/
+vtk/
+*.vtk
+*.foam
+
+# Mesh files that can be generated
+constant/polyMesh/
+*.unv
+*.hdf
+constant/extendedFeatureEdgeMesh/
+
+# Archive/backup files
+archive/
+*.bak
+*.tar.gz
+*.zip
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE files
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
